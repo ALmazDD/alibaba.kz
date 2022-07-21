@@ -32,6 +32,15 @@ function App() {
         <form ref={form} onSubmit={sendEmail} action="" method="post" id="revue-form" name="revue-form" target="_blank">
           <div className="flex flex-col md:flex-row justify-center mb-4">
             <input
+              placeholder="Ваш email..."
+              type="email"
+              name="email"
+              id="member_email"
+              className="text-2xl placeholder:text-gray-400 placeholder:italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 focus:bg-opacity-20 duration-150 md:rounded-tr-none md:rounded-br-none rounded outline-none mb-4 md:mb-0"
+            />{' '}
+          </div>
+          <div className="flex flex-col md:flex-row justify-center mb-4">
+            <input
               placeholder="Ваше сообщение..."
               type="text"
               name="message"
