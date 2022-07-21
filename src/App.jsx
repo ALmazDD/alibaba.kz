@@ -2,7 +2,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col text-white">
       <main className="container mx-auto px-6 pt-16 flex-1 text-center">
-        <h2 className="text-xl md:text-4xl lg:text-6xl uppercase">Приветствуем на</h2>
+        <h2 className="text-2xl md:text-4xl lg:text-6xl uppercase">Приветствуем на</h2>
         <h1 className="text-3xl md:text-6xl lg:text-8xl uppercase font-black mb-8">Alibaba.kz</h1>
 
         <p className="text-base md:text-lg lg:text-2xl mb-8">Alibaba.kz - ближе как никогда раньше!</p>
@@ -18,14 +18,14 @@ function App() {
               type="email"
               name="member[email]"
               id="member_email"
-              className="text-2xl placeholder:text-gray-400 placeholder:italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 focus:bg-opacity-20 duration-150 md:rounded-tr-none md:rounded-br-none rounded-full outline-none mb-4 md:mb-0"
+              className="text-2xl placeholder:text-gray-400 placeholder:italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 focus:bg-opacity-20 duration-150 md:rounded-tr-none md:rounded-br-none rounded outline-none mb-4 md:mb-0"
             />
             <input
               type="submit"
               value="Отправить"
               name="member[subscribe]"
               id="member_submit"
-              className="bg-primary md:rounded-tl-none md:rounded-bl-none rounded-full text-2xl py-4 px-6 md:px-10 lg:py-6 lg:px-12 font-bold uppercase cursor-pointer hover:opacity-75 duration-150"
+              className="bg-primary md:rounded-tl-none md:rounded-bl-none rounded text-2xl py-4 px-6 md:px-10 lg:py-6 lg:px-12 font-bold uppercase cursor-pointer hover:opacity-75 duration-150"
             />
           </div>
 
@@ -35,7 +35,7 @@ function App() {
 
       <footer className="container mx-auto p-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <p className="mb-4 md:mb-0 md:text-xl">Разработано Clubbie.club</p>
+          <p className="mb-4 md:mb-0 md:text-xl lg:text-base">Разработано Clubbie.club</p>
 
           {/* <div className="flex -mx-6">
             <a href="#" className="mx-3 hover:opacity-80 duration-150">
