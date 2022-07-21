@@ -1,4 +1,22 @@
+import emailjs from '@emailjs/browser';
+import React, { useRef } from 'react';
+
 function App() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_a9mjtzd', 'template_sngza6r', form.current, 'hZoUoU1l3yNFZh6Qb').then(
+      (result) => {
+        console.log(result.text);
+        alert('Ваше сообщение отправлено!');
+      },
+      (error) => {
+        console.log(error.text);
+      },
+    );
+  };
   return (
     <div className="min-h-screen flex flex-col text-white">
       <main className="container mx-auto px-6 pt-16 flex-1 text-center">
@@ -11,12 +29,12 @@ function App() {
           300 btc
         </div>
 
-        <form action="" method="post" id="revue-form" name="revue-form" target="_blank">
+        <form ref={form} onSubmit={sendEmail} action="" method="post" id="revue-form" name="revue-form" target="_blank">
           <div className="flex flex-col md:flex-row justify-center mb-4">
             <input
-              placeholder="Ваш email адресс..."
-              type="email"
-              name="member[email]"
+              placeholder="Ваше сообщение..."
+              type="text"
+              name="message"
               id="member_email"
               className="text-2xl placeholder:text-gray-400 placeholder:italic py-4 px-6 md:px-10 lg:py-6 lg:px-12 bg-white bg-opacity-10 focus:bg-opacity-20 duration-150 md:rounded-tr-none md:rounded-br-none rounded outline-none mb-4 md:mb-0"
             />

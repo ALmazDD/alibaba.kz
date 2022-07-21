@@ -9,11 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.6.2",
     "autoprefixer": "^10.4.7",
     "D": "^1.0.0",
     "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5",
     "tailwindcss": "^3.1.6"
   },
   "devDependencies": {
