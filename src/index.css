@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 body {
   /*background-image: url('./bg.jpg');*/
 	background-size: cover;
@@ -10,3 +10,7 @@ body {
   
 }
 
+input,
+input::placeholder {
+    font: 20px/3 sans-serif;
+}
